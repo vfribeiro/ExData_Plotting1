@@ -31,7 +31,7 @@ df$Sub_metering_2 <- as.numeric(df$Sub_metering_2)
 df$Sub_metering_3 <- as.numeric(df$Sub_metering_3)
 
 # plot 3
-png(filename = "plot3.png", width = 504, height = 504, bg = "transparent")
+png(filename = "plot3.png", width = 480, height = 480, bg = "transparent")
 plot(df$DateTime,
      df$Sub_metering_1,  
      type = 'l',

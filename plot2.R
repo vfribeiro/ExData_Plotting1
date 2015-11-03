@@ -29,7 +29,7 @@ df$DateTime <- strptime( paste(df$Date, df$Time), format = "%d/%m/%Y %H:%M:%S")
 df$Global_active_power <- as.numeric(df$Global_active_power)
 
 # plot 2
-png(filename = "plot2.png", width = 504, height = 504, bg = "transparent")
+png(filename = "plot2.png", width = 480, height = 480, bg = "transparent")
 plot(df$DateTime,
      df$Global_active_power,  
      type = 'l',

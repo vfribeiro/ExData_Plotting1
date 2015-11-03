@@ -34,7 +34,7 @@ df$Voltage <- as.numeric(df$Voltage)
 df$Global_reactive_power <- as.numeric(df$Global_reactive_power)
 
 # plot 4
-png(filename = "plot4.png", width = 504, height = 504, bg = "transparent")
+png(filename = "plot4.png", width = 480, height = 480, bg = "transparent")
 par(mfrow = c(2,2))
 
 # chart top left

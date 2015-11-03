@@ -24,12 +24,11 @@ if (!file.exists("desireddata.csv")) {
   df <- read.csv("desireddata.csv", header = TRUE, stringsAsFactors = FALSE)
 }
 
-
 # convert data
 df$Global_active_power <- as.numeric(df$Global_active_power)
 
 # plot 1
-png(filename = "plot1.png", width = 504, height = 504, bg = "transparent")
+png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
 hist(df$Global_active_power,  
      col = "red",
      breaks = 24,
